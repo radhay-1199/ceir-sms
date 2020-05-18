@@ -25,13 +25,13 @@ import com.ceir.CEIRPostman.model.RunningAlertDb;
 import com.ceir.CEIRPostman.model.SystemConfigurationDb;
 import com.ceir.CEIRPostman.model.User;
 import com.ceir.CEIRPostman.model.UserTemporarydetails;
-import com.ceir.CEIRPostman.util.EmailUtil;
+import com.ceir.CEIRPostman.util.SmsUtil;
 
 @Service
-public class EmailService implements Runnable {
+public class SmsService implements Runnable {
 
 	@Autowired
-	EmailUtil emailUtil;
+	SmsUtil emailUtil;
 
 	@Autowired
 	NotificationRepository notificationRepo;
